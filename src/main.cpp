@@ -5,9 +5,10 @@
 #define ledPin 10
 #define photoResistorPin A0
 
-intervalTimer writeOutputTimer(100U);
-intervalTimer readInputTimer(25U);
-intervalTimer displayValuesTimer(500U);
+intervalTimer writeOutputTimer(200U);
+intervalTimer readInputTimer(50U);
+intervalTimer displayValuesTimer(1000U);
+// these timers control the main tasks
 
 constexpr uint8_t nmbrSamples{8U};
 uint32_t ambientLight[nmbrSamples];
